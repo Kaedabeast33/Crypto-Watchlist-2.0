@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale =1.0">
+        <title>HOME PAGE</title>
+        <link rel="stylesheet" href="CSS/home.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    </head>
+    <body>
+        <navbar>
+          <a ></a> 
+            <h3 id="greeting">Welcome Kaeden</h3>
+            <a class="logout login-smooth-lightup" href="./login.html"><button>LogOut</button></a> 
+        </navbar>
+
+        <main id="main">
+         
+          <div class="watchlist-container" >
+            <div class="watchlist-header">∂</div>
+            <div class="watchlist-body table-responsive">
+              <table class="table table-striped">
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Symbol</th>
+                    <th scope="col">Current Price</th>
+                    <th scope="col">24h Hi</th>
+                    <th scope="col">24h Lo</th>
+                    <th scope="col">%</th>
+               
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td>Bitcoin</td>
+                    <td>2000</td>
+                    <td>0.00</td>
+                    <td>0.00</td>
+                    <td>0.00</td>
+                    <td>0.00</td>
+                    
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <button class="delete" id="delete-btn">delete</button>
+        </div>
+        </main>
+        <div>
+           <button id="addWatchlist">add list</button>
+          
+        </div>
+
+        <footer id="coins" class="table-responsive" >
+            <table class="table table-striped">
+                <thead style="position:sticky;">
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Symbol</th>
+                    <th scope="col">Current Price</th>
+                    <th scope="col">24h Hi</th>
+                    <th scope="col">24h Lo</th>
+                    <th scope="col">%</th>
+                    <th scope="col"></th>
+                 
+                  </tr>
+                </thead>
+                <tbody id="coins-table" class=".table-hover">
+                 
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>bitcoin</td>
+                    <td>btc</td>
+                    <td>20000</td>
+                    <td>20001</td>
+                    <td>1999</td>
+                    <td>0.01</td>
+                  </tr>
+               
+                </tbody>
+              </table>
+            </footer>
+     <!-- <div class="mainbody greeting" id="greeting" style="display:block">
+
+            <a class="logout" href="./login.html"><button >Log out</button></a> 
+
+           
+      
+
+        <div class="watchlist-cointainer" style="height:50vh;
+              width:100vw;
+              background-color: black; display:block;">
+            <div class="watchlist-header"></div>
+            <div class="watchlist-info"></div>
+        </div>
+     </div>   -->
+        
+    </body>
+    <script src="./JavaScript/home.js"></script>
+</html>

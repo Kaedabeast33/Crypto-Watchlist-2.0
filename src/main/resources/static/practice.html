@@ -1,0 +1,90 @@
+Home
+Coding Ground
+Jobs
+Whiteboard
+Tools
+Business
+Teach with us
+logo
+Category 
+Search tutorials ...
+Prime Packs
+Courses
+eBooks
+Library
+Q/A
+Technical Questions and Answers
+Trending Categories
+Data Structure Data Structure
+Networking Networking
+RDBMS RDBMS
+Operating System Operating System
+Java Java
+iOS iOS
+HTML HTML
+CSS CSS
+Android Android
+Python Python
+C Programming C Programming
+C++ C++
+C# C#
+MongoDB MongoDB
+MySQL MySQL
+Javascript Javascript
+PHP PHP
+Selected Reading
+UPSC IAS Exams Notes
+Developer's Best Practices
+Questions and Answers
+Effective Resume Writing
+HR Interview Questions
+Computer Glossary
+Who is Who
+
+How to set multiple cookies in JavaScript?
+JavascriptWeb DevelopmentFront End Technology
+
+
+
+
+
+
+
+With JavaScript, to set more than one cookie, set document.cookie more than once using the; separator.
+
+Example
+You can try to run the following code to set multiple cookies −
+
+Live Demo
+
+<!DOCTYPE html>
+<html>
+  <head>
+     <script>
+     var num=1;
+     function addCookie() {
+        document.cookie=num+"="+num;
+        num++;
+     }
+     function listCookies() {
+        var result = document.cookie;
+        document.getElementById("list").innerHTML=result;
+     }
+     function removeCookies() {
+        var res = document.cookie;
+        var multiple = res.split(";");
+        for(var i=0;i<multiple.length;i++) {
+           var key = multiple[i].split("=");
+           document.cookie=key[0]+"=; expires=Thu, 01 Jan 1970 00:00:00 UTC";
+        }
+     }
+     </script>
+  </head>
+  <body>
+     <button onclick='addCookie()'>ADD</button><br>
+     <button onclick='listCookies()'>LIST COOKIES</button><br>
+     <button onclick='removeCookies()'>REMOVE</button>
+     <h1>Cookies List</h1>
+     <p id="list"></p>
+  </body>
+</html>
